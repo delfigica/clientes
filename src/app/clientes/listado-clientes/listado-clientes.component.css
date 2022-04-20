@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.contenedor-listado {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.titulo-listado {
+  color: rgb(41, 41, 41);
+}
+.th, .td {
+  width: 120px;
+  text-align: center;
+  color: white;
+}
+.th {
+  background-color: rgba(39, 38, 38, 0.788);
+}
+.td {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+@media (max-width: 600px) {
+  .th, .td {
+    width: 50px;
+  }
+}

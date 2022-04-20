@@ -1,0 +1,26 @@
+<div class="contenedor-listado">
+  <h2 class="titulo-listado">Listado clientes</h2>
+  <div *ngIf="!clientes.length"><p>No hay clientes por el momento</p></div>
+  <div>
+    <table class="table" *ngIf="clientes.length >= 1">
+      <thead class="thead">
+        <tr>
+          <th class="th">Nombre</th>
+          <th class="th">Apellido</th>
+          <th class="th">dni</th>
+          <th class="th">correo</th>
+          <th class="th">grupo</th>
+        </tr>
+      </thead>
+      <tbody class="tbody" *ngFor="let cliente of clientes">
+        <tr>
+          <td class="td">{{ cliente.nombre }}</td>
+          <td class="td">{{ cliente.apellido }}</td>
+          <td class="td">{{ cliente.dni }}</td>
+          <td class="td">{{ cliente.correo }}</td>
+          <td class="td">{{ cliente.grupo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
